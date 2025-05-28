@@ -13,13 +13,14 @@ import Signup from './Component/Signup/Signup';
 import NotFound from './Component/NotFound/NotFound';
 import Home from './Component/Home/Home'
 import Register from './Component/Register/Register'
-import UserContextProvider from './Context/userContext'
+import UserContextProvider, { UserContext } from './Context/userContext'
 import ProtectedRoute from './Component/ProtectedRoute/ProtectedRoute'
 import ProductDetails from './Component/ProductDetails/ProductDetails'
 import { QueryClient , QueryClientProvider} from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import CartContextProvider from './Context/CartContext/CartContext'
 import { Toaster } from 'react-hot-toast';
+
 // import { Toaster } from './../node_modules/react-hot-toast/src/components/toaster';
 
 

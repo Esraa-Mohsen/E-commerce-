@@ -76,9 +76,8 @@ getItems()
 
 
 
-
-
-
+{cartDetails?.products?.length > 0 ?
+<>
 <div className=" w-[80%] m-auto relative overflow-x-auto shadow-md sm:rounded-lg">
    <div className="w-[50%]  mx-auto my-6 p-4 flex items-center justify-center bg-emerald-100 border border-emerald-300 rounded-md shadow-sm">
   <h2 className="text-lg md:text-xl font-semibold text-emerald-700">
@@ -160,6 +159,28 @@ getItems()
     </tbody>
   </table>
 </div>
+
+</> : <>  <div className="flex flex-col items-center justify-center min-h-[60vh] bg-[#D0FAE5] px-4 text-center">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
+        alt="Empty Cart"
+        className="w-32 h-32 mb-6"
+      />
+      <h1 className="text-2xl md:text-3xl font-bold text-gray-700">Your Cart is Empty</h1>
+      <p className="text-gray-600 mt-2 mb-6 max-w-md">
+        You haven’t added any products yet. Browse our collection and add something you love!
+      </p>
+      <a
+        href="/product"
+        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition duration-300"
+      >
+        Start Shopping
+      </a>
+    </div></>
+}
+
+
+
 
 
 
