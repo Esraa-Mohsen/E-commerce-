@@ -124,7 +124,8 @@ export default function ProductDetails() {
         <span>{product?.price} EGP</span>
         <span>{product?.ratingsAverage}<i className='fas fa-star text-yellow-500 pt-1'></i></span>
   </div>
-  <button className='mt-4 bg-emerald-500 cursor-pointer text-white font-semibold py-2 px-4 rounded hover:bg-emerald-600 transition-all duration-300'>Add To Cart</button>
+  <button 
+   className='mt-4 bg-emerald-500 cursor-pointer text-white font-semibold py-2 px-4 rounded hover:bg-emerald-600 transition-all duration-300'>Add To Cart</button>
         </div>
        
 

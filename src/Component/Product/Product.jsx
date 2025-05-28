@@ -31,7 +31,8 @@ data?.data?.data?.map((product)=> <div key={product.id} className='w-52 m-4 p-4 
 </Link>
        
   
-     <button className='mt-4 bg-emerald-500 cursor-pointer text-white font-semibold py-2 px-4 rounded hover:bg-emerald-600 transition-all duration-300'>Add To Cart</button>
+     <button 
+     className='mt-4 bg-emerald-500 cursor-pointer text-white font-semibold py-2 px-4 rounded hover:bg-emerald-600 transition-all duration-300'>Add To Cart</button>
 
 
 

@@ -1,81 +1,3 @@
-// import React, { useContext } from 'react'
-// import img from "../../assets/freshcart-logo.svg"
-// import { Link, useNavigate } from 'react-router-dom'
-// import { UserContext } from '../../Context/userContext'
-
-
-
-// export default function NavBar() {
-
-
-//   let {userLogin , setuserLogin} = useContext (UserContext)
-//   let Navigate = useNavigate();
-
-
-//   function signout () {
-
-//   localStorage.removeItem("userToken") ;
-//   setuserLogin(null);
-
-// Navigate("login")
-//   }
-
-
-
-
-
-//   return (
-
-
-// <nav className="bg-[#F0FDF4]  border-gray-200 fixed top-0 right-0 left-0 z-50">
-//   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-//     <div className="right flex items-center gap-4 ">
-//     <Link to="" className="flex items-center space-x-3 rtl:space-x-reverse">
-//         <img src={img} className="h-8" alt="Flowbite Logo" width={120} />
-        
-       
-//     </Link>
-
-
-
-//  {userLogin != null ? <>   <ul className='flex gap-4'>
-//       <li><Link to="" className='text-gray-700 hover:text-blue-900' >Home</Link></li>
-//         <li><Link className='text-gray-700  hover:text-blue-900' to="cart" >Cart</Link></li>
-//           <li><Link to="product" className='text-gray-700  hover:text-blue-900'>Product</Link></li>
-//             <li><Link to="categories" className='text-gray-700  hover:text-blue-900'>Categories</Link></li>
-//               <li><Link to="brands" className='text-gray-700  hover:text-blue-900'>Brands</Link></li>
-       
-//     </ul> </> : null } 
-//     </div>
-   
-
-//     { <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-//      <ul className='flex gap-3'>
-//       <li><i className="fa-brands fa-facebook"></i></li>
-//        <li><i className="fa-brands fa-twitter"></i></li>
-//         <li><i className="fa-brands fa-instagram"></i></li>
-//          <li><i className="fa-brands fa-linkedin"></i></li>
-
-//          {userLogin != null ?  <span   onClick={signout} className='text-gray-700  hover:text-blue-900  cursor-pointer'>Signout</span> 
-         
-         
-//          : <><li><Link to="login" className='text-gray-700  hover:text-blue-900'>Login</Link></li>
-//              <li><Link to="register" className='text-gray-700  hover:text-blue-900'>Register</Link></li></> }
-          
-              
-  
-//      </ul>
-//     </div> }
-//   </div>
-// </nav>
-
-//   )
-// }
-
-
-
-
-
 
 import React, { useContext, useState } from 'react';
 import img from "../../assets/freshcart-logo.svg";
@@ -214,15 +136,11 @@ export default function NavBar() {
                     Categories
                   </Link>
                 </li>
-                <li>
-                  <Link to="brands" className="block py-2 text-gray-700 hover:text-blue-900" onClick={() => setIsMenuOpen(false)}>
-                    Brands
-                  </Link>
-                </li>
+            
               </ul>
             )}
 
-            {/* Social and Auth - Mobile (Centered) */}
+         
             <div className="mt-6 flex flex-col items-center space-y-4">
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-700 hover:text-blue-900">
