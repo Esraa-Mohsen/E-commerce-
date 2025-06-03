@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react';
 import img from "../../assets/freshcart-logo.svg";
 import { Link, useNavigate } from 'react-router-dom';
-import { UserContext } from '../../Context/userContext';
+import { UserContext } from '../../Context/UserContext';
 
 export default function NavBar() {
   let { userLogin, setuserLogin } = useContext(UserContext);
@@ -136,7 +136,11 @@ export default function NavBar() {
                     Categories
                   </Link>
                 </li>
-            
+                {/* <li>
+                  <Link to="brands" className="block py-2 text-gray-700 hover:text-blue-900" onClick={() => setIsMenuOpen(false)}>
+                    Brands
+                  </Link>
+                </li> */}
               </ul>
             )}
 

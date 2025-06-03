@@ -4,7 +4,7 @@ import * as yup from "yup";
 import axios from "axios" ;
 import {Link, useNavigate} from "react-router-dom"
 import Login from './../Login/Login';
-import { UserContext } from '../../Context/userContext';
+import { UserContext } from '../../Context/UserContext';
 
 
 
