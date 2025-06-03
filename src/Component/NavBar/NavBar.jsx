@@ -18,14 +18,14 @@ export default function NavBar() {
   return (
     <nav className="bg-[#F0FDF4] border-gray-200 fixed top-0 right-0 left-0 z-50 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* Left Side - Logo and Main Nav */}
+     
         <div className="flex items-center md:order-1">
           {/* Logo */}
           <Link to="" className="flex items-center mr-4">
             <img src={img} className="h-8" alt="FreshCart Logo" width={120} />
           </Link>
           
-          {/* Main Navigation - Desktop */}
+    
           {userLogin && (
             <ul className="hidden md:flex md:space-x-6">
               <li>
@@ -48,11 +48,11 @@ export default function NavBar() {
                   Categories
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="brands" className="text-gray-700 hover:text-blue-900 font-medium">
                   Brands
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
         </div>
